@@ -9,12 +9,12 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 60s linear;
+    animation: App-logo-spin infinite 2.5s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #e92121;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  animation: h-rotate infinite 45s linear;
 }
 
 .App-link {
@@ -34,7 +36,16 @@
     filter: hue-rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
-    filter: hue-rotate(360deg);
+    transform: rotate(-360deg);
+    filter: hue-rotate(45deg);
+  }
+}
+
+@keyframes h-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(45deg);
   }
 }
