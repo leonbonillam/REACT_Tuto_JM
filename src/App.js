@@ -2,6 +2,8 @@ import React from "react";
 import logo from "./logo.svg";
 import Componente from "./components/Componente";
 import Propiedades from "./components/Propiedades";
+import Estado from "./components/Estado";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
 
 import "./App.css";
 
@@ -45,6 +47,7 @@ function App() {
           </section>
           <section>
             <Componente msg="También Soy un componente funconal desde un prop pero fuera" />
+            <hr />
             <br /> <br />
             <Propiedades
               cadena="Este es cadena de texto"
@@ -57,11 +60,15 @@ function App() {
               componenteReact={
                 <Componente msg="Soy un componete pasado comp prop" />
               }
-            />{" "}
+            />
+            <hr />
+            <Estado />
+            <hr />
+            <RenderizadoCondicional />
           </section>
         </header>
       </div>
-      <div></div>
+      <div>Para bailar ella es una bomba</div>
     </>
   );
 }
