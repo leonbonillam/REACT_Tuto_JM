@@ -89,7 +89,7 @@ export class EventosES7 extends Component {
 }; */
 
 const Boton = ({ myOnClick }) => (
-  <button onClick={myOnClick}>Botón hecho componente</button>
+  <button onClick={myOnClick}>Aparezco al dar click</button>
 );
 export class MasSobreEventos extends Component {
   handleClick = (e, mensaje) => {
@@ -120,7 +120,7 @@ export class MasSobreEventos extends Component {
 
         <Boton
           myOnClick={(e) =>
-            this.handleClick(e, "Parametro pasado desde un evento")
+            this.handleClick(e, "Parametro pasado desde un evento II")
           }
         />
       </div>
