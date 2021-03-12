@@ -12,7 +12,10 @@ import AjaxApis from "./components/AjaxApis";
 import ContadorHooks from "./components/ContadorHooks";
 import ScrollHooks from "./components/ScrollHooks";
 import RelojHooks from "./components/RelojHooks";
+import AjaxHooks from "./components/AjaxHooks";
 import "./App.css";
+import HooksPersonalizados from "./components/HooksPersonalizados";
+import Referencias from "./components/Referencias";
 
 function App() {
   let nombre = "Jonny",
@@ -65,7 +68,7 @@ function App() {
               funcion={(num) => num * num}
               elementoReact={<i>Esto es un elemnto react</i>}
               componenteReact={
-                <Componente msg="Soy un componete pasado comp prop" />
+                <Componente msg="Soy un componete pasado con prop" />
               }
             />
             <hr />
@@ -90,8 +93,14 @@ function App() {
             <ContadorHooks titulo="Loquesea" />
             <hr />
             <ScrollHooks />
-            <hr /> <RelojHooks />
             <hr />
+            <RelojHooks />
+            <hr />
+            <AjaxHooks />
+            <hr />
+            <HooksPersonalizados />
+            <hr />
+            <Referencias />
           </section>
         </header>
         <hr />

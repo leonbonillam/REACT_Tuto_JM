@@ -8,7 +8,7 @@ export default function Propiedades(props) {
       <ul>
         <li>{props.cadena}</li>
         <li>{props.numero}</li>
-        <li>{props.bool ? "Verdadero" : " Falso"}</li>
+        <li>{!props.bool ? "Verdadero" : " Falso"}</li>
         <li>{props.arreglo.join(", ")}</li>
         <li>{props.objeto.nombre + " - " + props.objeto.correo}</li>
         <li>{props.arreglo.map(props.funcion).join(", ")}</li>
