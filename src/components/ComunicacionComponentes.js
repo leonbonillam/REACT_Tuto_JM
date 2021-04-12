@@ -16,7 +16,7 @@ export default class Padre extends Component {
       <>
         <h2>Comunicación entre componetes</h2>
         <p>
-          Contador <b>{this.state.contador}</b>
+          Contador: <b>{this.state.contador}</b>
         </p>
         <Hijo
           incrementarContador={this.incrementarContador}

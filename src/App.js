@@ -13,9 +13,12 @@ import ContadorHooks from "./components/ContadorHooks";
 import ScrollHooks from "./components/ScrollHooks";
 import RelojHooks from "./components/RelojHooks";
 import AjaxHooks from "./components/AjaxHooks";
-import "./App.css";
 import HooksPersonalizados from "./components/HooksPersonalizados";
 import Referencias from "./components/Referencias";
+import Formularios from "./components/Formularios";
+import Estilos from "./components/Estilos";
+import "./App.css";
+import ComponentesEstilizados from "./components/ComponentesEstilizados";
 
 function App() {
   let nombre = "Jonny",
@@ -26,6 +29,7 @@ function App() {
     <>
       <div className="App">
         <header className="App-header">
+          {/* ---------------------------------------------------- */}
           <section>
             <img src={logo} className="App-logo" alt="logo" />
             <label htmlFor="nombre">Nombre</label>
@@ -41,6 +45,7 @@ function App() {
             <p>
               Holi boli <code>src/App.js</code> and save to reload.
             </p>
+            {/* ---------------------------------------------------- */}
 
             <section>
               <Componente msg="Yo soy un componente funconal desde un prop" />
@@ -55,6 +60,8 @@ function App() {
               Learn React
             </a>
           </section>
+          {/* ---------------------------------------------------- */}
+
           <section>
             <Componente msg="También Soy un componente funconal desde un prop pero fuera" />
             <hr />
@@ -90,7 +97,7 @@ function App() {
             <hr />
             <AjaxApis />
             <hr />
-            <ContadorHooks titulo="Loquesea" />
+            <ContadorHooks titulo="Clicks:" />
             <hr />
             <ScrollHooks />
             <hr />
@@ -101,6 +108,12 @@ function App() {
             <HooksPersonalizados />
             <hr />
             <Referencias />
+            <hr />
+            <Formularios />
+            <hr />
+            <Estilos />
+            <hr />
+            <ComponentesEstilizados />
           </section>
         </header>
         <hr />

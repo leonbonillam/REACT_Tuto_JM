@@ -106,7 +106,7 @@ export class MasSobreEventos extends Component {
         <h2>Más sobre eventos</h2>
         <button
           onClick={(e) =>
-            this.handleClick(e, "Parametro pasado desde un evento")
+            this.handleClick(e, "Parametro pasado desde un evento???")
           }
         >
           Saludar
@@ -118,6 +118,7 @@ export class MasSobreEventos extends Component {
           }
         /> */}
 
+        {/* Evento personalizado */}
         <Boton
           myOnClick={(e) =>
             this.handleClick(e, "Parametro pasado desde un evento II")
